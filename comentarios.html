@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+
+<title> Modulo de comentarios </title>
+
+</head>
+<body>
+
+<form>
+<textarea id="texto" rows="10" cols="20" placeholder="Ingresa un comentario"></textarea>
+<input type="button" onclick="gettexto()" value="Comentar" /> <br>
+<p id="para"></p>
+</form>
+
+<script type="text/javascript">
+function gettexto() {
+  text = texto.value;
+  document.getElementById("para").innerHTML += '<p>'+text
+  document.getElementById("texto").value = ""
+}
+</script>
+
+</body>
+</html>
