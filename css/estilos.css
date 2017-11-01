@@ -1,0 +1,155 @@
+/*-----------Menu principal----------------*/
+*{
+  margin:0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+body{
+  background: #BFC9CA;
+}
+.menuBar{
+  display:none;
+}
+header{
+  width: 100%;
+}
+header nav{
+  width: 90%;
+  max-width: 100%;
+  margin: 20px, auto;
+  background: #1F618D;
+  z-index: 1000;
+}
+
+header nav ul{
+  list-style: none;
+}
+header nav ul li{
+  display: inline-block;
+  position: relative;
+}
+header nav ul li:hover{
+  background:#940429;
+}
+header nav ul li a{
+  color: #FFFFFF;
+  padding: 20px;
+  display:block;
+  text-decoration: none;
+}
+
+header nav ul li a span{
+  margin-right:10px;
+}
+
+/*--------------------sub menu--------------------*/
+header nav ul li:hover .category{
+  display: block;
+
+}
+header nav ul li .category{
+  display: none;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+  background: #2E4C73;
+}
+header nav ul li .category li{
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+header nav ul li .category li a{
+  display: block;
+}
+header nav ul li .flecha{
+  position: relative;
+  top: auto;
+  margin-left: 50px;
+  margin-right: 0;
+}
+/*-----------------------responsive-----------------------*/
+@media screen and (max-width:700px) {
+  body{
+    padding-top: 80px;
+  }
+  header nav{
+    width: 80%;
+    height:calc(100% - 80px);
+    margin: 0;
+    position: fixed;
+    /*left: 0;*/
+    right: 100%;/*se esconde la pantalla*/
+    overflow: scroll;
+    transition: all 0.5s;
+
+  }
+
+  header nav ul li{
+    display: block;
+    border-bottom: 2px solid rgba(255, 225, 255, 0.5);
+  }
+  header nav ul li a {
+    display: block;
+  }
+  /*header nav ul li:hover .category{
+    display: none;
+  }*/
+  header nav ul li .category{
+    width: 100%;
+    position: relative;
+
+  }
+  header nav ul li .category li a{
+    margin-left: 20px;
+  }
+  header nav ul li .flecha{
+    float: right;
+  }
+
+  .menuBar{
+    display: block;
+    width: 100%;
+    background: #B5D3F1;
+    position: fixed;
+    top: 0;
+
+  }
+  .menuBar .btnMenu{
+    display: block;
+    padding: 20px;
+    background: #273746;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    overflow: hidden;
+    /*cursor: pointer;*/
+  /*  width: 100%; /*como boton*/
+    /*border: 0;  /*como boton*/
+    /*height: 80px;  /*como boton*/
+    /*text-align: left; /*como boton*/
+
+  }
+  .menuBar span {
+    float: right;
+    font-size: 40px;
+  }
+  .mostrar {
+    left: 0;
+  }
+  .bannerTxt {
+    display:none;
+  }
+}
+
+/*-----------------------Banner -----------------------*/
+/*-----------------------Info -----------------------*/
+.infoColum {
+  background: #FBA919;
+  color: #FFFFFF;
+  padding: 15px;
+  margin-bottom: 20px;
+}

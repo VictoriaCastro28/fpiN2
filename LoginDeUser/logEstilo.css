@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(logImg/banner.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.contenidoForm {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 500px;
+  margin: 48px auto;
+  color: #FFFFFF;
+  border-radius: 5px;
+  /*padding: 40px;*/
+}
+.contenidoForm .registro{
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  border-top: 2px solid #BA081E;
+  border-bottom: 2px solid #BA081E;
+  transition: all 0.5s;
+}
+.contenidoForm .registro:hover{
+  border-top: 2px solid #0075D9;
+  border-bottom: 2px solid #0075D9;
+}
+.contenidoForm h2{
+  margin: 0 0 28px 0;
+  font-size: 20px;
+  font-weight: 400 bold;
+  line-height: 1;
+
+}
+.contenidoForm input[type="text"],
+.contenidoForm input[type="password"],
+.contenidoForm input[type="email"]{
+  outline: none;
+  background: rgba(204, 209, 209, 0.3);
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 4px solid #BA081E;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  transition: all 0.5s;
+
+}
+.contenidoForm input[type="text"]:focus,
+.contenidoForm input[type="password"]:focus,
+.contenidoForm input[type="email"]:focus{
+  border-bottom: 4px solid #0075D9;
+}
+.contenidoForm input[type="submit"]{
+  background: #85C1E9;
+  color: #000000;
+  border: none;
+  width: 100%;
+  padding:10px 0;
+  font-weight: normal;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.contenidoForm input[type="submit"]:hover{
+  background: rgba(0, 117, 217, 0.5);
+
+}
+.contenidoForm .resetPass{
+  background: rgba(0, 117, 217, 0.5);
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.contenidoForm .resetPass a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+}
+.contenidoForm .form {
+  padding: 40px;
+  display: none;
+}
+.contenidoForm .form:nth-child(2){
+  display:block;
+}
+.mostrar{
+  height: 30px;
+  border-top: 2px solid #0075D9;
+  border-bottom: 2px solid #0075D9;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}

@@ -1,44 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>MENU</title>
-    <link rel="stylesheet" href="Css/estilos.css">
-    <link rel="stylesheet" href="Css/fonts.css">
+    <title>Todo sobre tu Web</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
   </head>
   <body>
     <header>
-      <div class="menuBar">
-        <a href="#" class="btnMenu"><span class="icon-menu"></span>Men&uacute;</a>
+      <div class="menuBar" >
+        <a href="#" class="btnMenu"><span class="icon-menu3" id="btnM"></span>Men&uacute;</a>
+      </div>
+      <div class="contenedor">
+        <nav class="mainMenu" id="mainM">
+          <ul>
+            <li><a href="#"><span class="icon-home"></span>Inicio</a></li>
+            <li class="subMenu">
+              <a href="#"><span class="icon-folder-open"></span>Categorias<span class="flecha icon-circle-down"></span></a>
+              <ul class="category">
+                <li><a href="#">Nuevo</a></li>
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#">Dise&ntilde;o</a></li>
+                <li><a href="#">Recursos</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span class="icon-briefcase"></span>Documentos</a></li>
+            <li><a href="#"><span class="icon-earth"></span>Nosotros</a></li>
+            <li><a href="#"><span class="icon-profile"></span>Registro &#47; Inicio</a></li>
+          </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!--div class="banner">
+      <img src="img/banner.jpg" alt="" class="bannerImg">
+      <div class="contentBanner">
+        <h2 class="bannerTitulo">Dise&ntilde;o y Desarollo Web</h2>
+        <p class="bannerTxt">Aqu&iacute; encontraras el mejor contenido&#44; para dise&ntilde;ar o aprender acerca de las tecnolog&iacute;as Web. </p>
+      </div>
+    </div-->
+    <main class="main">
+      <div class="contenedor">
+        <section class="info">
+          <article class="infoColum">
+            <img src="img/img01.jpg" alt=""class="infoImg">
+            <h2 class="infoTitulo">Diferencias entre HTML5 y Flash</h2>
+          </article>
+          <article class="infoColum">
+            <img src="img/img02.jpg" alt=""class="infoImg">
+            <h2 class="infoTitulo">Historia de HTML5&#44; CSS3 y JavaScript</h2>
+          </article>
+          <article class="infoColum">
+            <img src="img/img03.jpg" alt=""class="infoImg">
+            <h2 class="infoTitulo">Etiquetas b&aacute;sicas HTML5</h2>
+          </article>
+        </section>
 
       </div>
-      <nav>
-        <ul>
-          <li><a href="#"><span class="icon-home"></span>Inicio</a></li>
-          <li class="subMenu">
-            <a href="#"><span class="icon-folder-open"></span>Categorias</a>
-            <ul class="category">
-              <li><a href="#">Nuevo</a></li>
-              <li><a href="#">Tutoriales</a></li>
-              <li><a href="#">Dise&ntilde;o</a></li>
-              <li><a href="#">Recursos</a></li>
-            </ul>
-          </li>
-          <li><a href="#"><span class="icon-briefcase"></span>Documentos</a></li>
-          <li><a href="#"><span class="icon-earth"></span>Nosotros</a></li>
-          <li><a href="#"><span class="icon-paste"></span>Registro &#47; Inicio</a></li>
-        </ul>
-      </nav>
-    </header>
-	  <h2>Slider</h2>
+    </main>
 
-		<section class="slider">
-  
-
-
-
-		</section>
-
+    <script type="text/javascript"src="js/menuScrip.js"></script>
   </body>
 </html>
